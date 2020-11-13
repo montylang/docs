@@ -1,4 +1,6 @@
-# Website
+# Monty Documentation
+
+[![Build Status](https://travis-ci.org/montylang/docs.svg?branch=master)](https://travis-ci.org/montylang/docs)
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
