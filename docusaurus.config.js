@@ -1,12 +1,12 @@
 module.exports = {
   title: 'Monty',
   tagline: 'Functional programming for python developers',
-  url: 'https://mulan-szechuan-sauce.github.io',
-  baseUrl: '/monty/',
+  url: 'https://montylang.github.io',
+  baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'mulan-szechuan-sauce', // Usually your GitHub org/user name.
-  projectName: 'monty', // Usually your repo name.
+  organizationName: 'montylang', // Usually your GitHub org/user name.
+  projectName: 'docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Monty',
@@ -23,7 +23,7 @@ module.exports = {
         },
         //{to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/Mulan-Szechuan-Sauce/monty',
+          href: 'https://github.com/montylang/monty',
           label: 'GitHub',
           position: 'right',
         },
@@ -87,13 +87,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/Mulan-Szechuan-Sauce/monty/tree/master/docs/',
+            'https://github.com/montylang/docs/tree/master/docs/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/Mulan-Szechuan-Sauce/monty/tree/master/',
+            'https://github.com/montylang/docs/tree/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
