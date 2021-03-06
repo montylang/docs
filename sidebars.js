@@ -10,5 +10,10 @@ module.exports = {
       'basic-collections',
       'maybe'
     ],
+    'Type Classes': [
+      'type-class',
+      'functor',
+      'monad',
+    ],
   },
 };

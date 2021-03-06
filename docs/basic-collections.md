@@ -178,7 +178,7 @@ OK now make inputs a list again.
 
 "OK that's fine, none of the code for `results` will change`
 
-But wait, how does `BTree` magically become a Functor? Sit tight until the chapter on `instances` and you'll find out!
+But wait, how does `BTree` magically become a Functor? Sit tight until the chapter on type classes and you'll find out!
 
 ## Foldables
 
