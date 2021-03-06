@@ -66,6 +66,28 @@ that take other functions as their arguments. These types of functions are calle
 You'll see in the [basic collections](./basic-collections.md) section some of the most common higher
 order functions provided by prelude.
 
+## Currying
+
+Currying is a technique to allow only partially applying a function.
+
+Suppose we have this function for adding numbers:
+
+```python
+def add(a, b):
+  return a + b
+```
+
+Now suppose we want to re-use this function to implement `add1` from above:
+```python
+add1 = (x): add(1, x)
+```
+
+Great! Wonderful code re-use. This technique is used often enough in functional programming that there is special syntax for it in Monty (and many other languages) called currying. The syntax might look a bit stange, since the `add` function really has two parameters. But it's really just sugar syntax for writing `add1 = (x): add(1, x)`
+
+```python
+add1 = add(1)
+```
+
 ## Lambdas
 
 While they might have a fancy name lambdas don't introduce anything we haven't already seen in this
@@ -102,3 +124,15 @@ foo((x): x + 1)
 Notice how we don't declare `add1` as a standalone function anymore? We can simply declare it
 directly in our function call. This can be handy in all sorts of different situations often when
 you're iterating lists or other containers.
+
+## Dot sugar syntax
+
+As Monty doesn't support object oriented programming, there are no objects. Sometimes it's a lot cleaner to use the "dot" syntax for method calls though, right?
+
+What if we want to treat `1` as an object, and `add` as a method:
+
+```python
+1.add(2)
+```
+
+Monty supports this sugar syntax! It's exactly the same as calling `add(1, 2)`
